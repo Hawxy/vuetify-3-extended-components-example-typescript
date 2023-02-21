@@ -1,44 +1,21 @@
-# default
+# Vuetify 3 Extended Components Example (Typescript)
+
+Example project showing how to cleanly wrap & extend existing components without needing to reimplement the props.
+
+vee-validate is included as wrapping components for validation is a common scenario.
 
 ## Project setup
 
 ```
-# yarn
-yarn
-
 # npm
 npm install
 
-# pnpm
-pnpm install
 ```
 
 ### Compiles and hot-reloads for development
 
 ```
-# yarn
-yarn dev
-
 # npm
 npm run dev
 
-# pnpm
-pnpm dev
 ```
-
-### Compiles and minifies for production
-
-```
-# yarn
-yarn build
-
-# npm
-npm run build
-
-# pnpm
-pnpm build
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://vitejs.dev/config/).
