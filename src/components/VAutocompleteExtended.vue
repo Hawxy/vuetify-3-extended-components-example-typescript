@@ -13,7 +13,7 @@ import { useField } from "vee-validate";
 import type { VAutocomplete } from "vuetify/components";
 import type { Except } from "./util";
 
-// props
+// props - remove props we don't want users to get hints for
 type CleanedProps = Except<ExtractPublicPropTypes<typeof VAutocomplete>, "errorMessages" | "variant">;
 
 // extend//override props we want to add/change
