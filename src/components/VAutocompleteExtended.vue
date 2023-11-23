@@ -1,7 +1,7 @@
 <template>
   <v-autocomplete v-bind="props" v-model="value" :error-messages="errors" :loading="isLoading" @blur="handleBlur">
     <template v-for="(_, slotName) in ($slots as Slots)" :key="slotName" #[slotName]="slotProps">
-      <slot v-if="slotProps" :name="slotName" v-bind="slotProps || {}" />
+      <slot :name="slotName" v-bind="slotProps || {}" />
     </template>
   </v-autocomplete>
 </template>
