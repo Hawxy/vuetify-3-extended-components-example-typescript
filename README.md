@@ -1,6 +1,6 @@
 # Vuetify 3 Extended Components Example (Typescript)
 
-Example project showing how to cleanly wrap & extend existing components without needing to reimplement the props.
+Example project showing how to cleanly wrap & extend existing components without needing to reimplement the props/slots.
 
 vee-validate is included as wrapping components for validation is a common scenario.
 

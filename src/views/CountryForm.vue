@@ -10,8 +10,23 @@
               name="country"
               item-title="name"
               item-value="value"
-              :items="countries"
-            />
+              :items="countries"              
+            >
+              <template #label="{label}">
+                <div>
+                  {{ label + "-my-additional-string" }}
+                </div>
+              </template>
+              <!-- Item will unfortunately be an unknown type due to generics not being passed -->
+              <template #chip="{props, item}">
+                <v-chip v-if="item.raw" v-bind="props">
+                  {{ item.title }}
+                </v-chip> 
+              </template>
+              <template #prepend>
+                <v-icon :icon="'mdi-earth'" />
+              </template>
+            </v-autocomplete-extended>
           </v-col>
         </v-row>
         <v-row>
@@ -27,7 +42,6 @@
 </template>
 
 <script setup lang="ts">
-import VAutocompleteExtended from './VAutocompleteExtended.vue';
 import { object, string } from 'yup';
 import { useForm } from 'vee-validate';
 import { toTypedSchema } from '@vee-validate/yup';

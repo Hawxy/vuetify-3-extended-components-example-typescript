@@ -12,8 +12,11 @@ import { createApp } from 'vue'
 
 // Plugins
 import { registerPlugins } from '@/plugins'
+import VAutocompleteExtended from './components/VAutocompleteExtended.vue'
 
 const app = createApp(App)
+
+app.component('VAutocompleteExtended', VAutocompleteExtended)
 
 registerPlugins(app)
 

@@ -3,10 +3,10 @@
   "include": [
     "env.d.ts",
     "src/**/*",
-    "src/**/*.vue"
+    "src/**/*.vue",
+    "components.d.ts"
   ],
   "compilerOptions": {
-    "moduleResolution": "node",
     "paths": {
       "@/*": [
         "./src/*"
